@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #96c6f224
+}
+
+a {
+  color:aliceblue;
+}
+
+nav {
+  padding-left: 20px;
+  color: white;
+  background-color: #69b5e0;
+  height: 100px;
+  align-items: end;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+}
+
+nav h2{
+  text-align: right; 
+  padding-right: 30px;
+}
+
+nav a{
+ float: left;
+ display: block;
+ padding-right: 16px;
+ padding-bottom: 14px;
+ text-align: center;
+ text-decoration: none;
+ color: white;
+}
+
+.content {
+  padding: 30px;
+  color: brown;
+  font-family: cursive;
+  font-size: large;
+}
+
+.content a{
+  text-decoration: none;
+ 
+}
+
+footer {
+  color: white;
+  background-color: #69b5e0;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#story{
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+
+label{
+  font-size: small;
+}
+
+td{
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.align-top{
+  vertical-align: top;
+}
+
+.align-right{
+  text-align: right;
+}
+
+.fixed-width{
+  width: 300px;
+}
+
+input, textarea{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin: -25px;
+  font-size: large;
+  color: brown;
+  font-family: cursive;
+  text-align: center;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-size {
+  height: 200px;
+  width: 200px;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+.color{
+  color: aliceblue
+}
+
+.img {
+  width: 300px;
+  height: 200px;
+}

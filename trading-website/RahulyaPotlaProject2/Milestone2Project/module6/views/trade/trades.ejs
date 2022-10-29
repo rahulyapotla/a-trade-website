@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs')%>
+    <body>
+        <a href='/trades/available_breeds'>Available Breeds</a>
+    </div>
+    </nav>
+    <body>
+        <% if(categories.length){ %>
+            <% categories.forEach(category => { %>
+            
+                <h3 class="d-flex justify-content-center mt-2"><%= category %></h3>
+                
+                    <% if(breeds.length){ %>
+                        <% breeds.forEach(breed => { 
+                            if (breed.category === category) { %>
+                                <div class="d-flex justify-content-center"><a href = "/trades/available_breeds/<%= breed.id %>"><p><%=breed.name%></p></a></div>
+                                <% } });
+                        } else { %>
+                            <p>There are no connections to display.</p>
+                    <% } %>
+                
+            
+            <% }); %>
+        <% } else { %>
+            <p>There are no categories to display.</p>
+        <% } %>
+    </body>
+<%- include('../partials/footer.ejs')%>
+    

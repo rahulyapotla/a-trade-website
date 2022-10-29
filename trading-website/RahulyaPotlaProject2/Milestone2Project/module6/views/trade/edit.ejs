@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs')%>
+</div></nav>
+<div class = "mt-2 d-flex justify-content-center">
+    <form method="POST" action="/trades/available_breeds/<%= item.id%>?_method=PUT">
+        <div>
+            <div><label for="name">Name</label></div>
+            <div><input type="text" id="name" name="name" value="<%=item.name%>" class = "fixed-width"></div>
+        </div>
+        <div>
+            <div class = "align-top"><label for="category">Category</label></div>
+            <div><textarea rows="2" id="category" name="category" class = "fixed-width"><%=item.category%></textarea></div>
+        </div>
+        <div>
+            <div><label for="details">Details</label></div>
+            <div><textarea rows="5" id="details" name="details" class = "fixed-width"><%=item.details%></textarea></div>
+        </div>
+        <div>
+            <div class = "align-top"><label for="status">Status</label></div>
+            <div><textarea rows="2" id="status" name="status" class = "fixed-width"><%=item.status%></textarea></div>
+        </div>
+        <div>
+            <div colspan="2" class = "d-flex justify-content-center">
+            <button class="btn btn-success">Submit</button>
+        </div>
+    </form>
+
+</div>
+<%- include('../partials/footer.ejs')%>

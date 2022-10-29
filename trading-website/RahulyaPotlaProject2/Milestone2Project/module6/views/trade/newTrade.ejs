@@ -1,0 +1,33 @@
+<%- include('../partials/header.ejs')%>
+    <body>
+        <a href='/trades/new'>Start Selling</a>
+    </div>
+    </nav>
+    <div>
+        <form action = '/trades/available_breeds' class="form-content mt-5" method = 'POST'>
+            <div class="row">
+                <div class="col-3"><label for="name">Name:</label></div>
+                <div class="col-9"><input type="text" id="name" name="name"><br><br></div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label for="category">Category:</label></div>
+                <div class="col-9"><input type="text" id="category" name="category"><br><br></div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label for="details">Details:</label></div>
+                <div class="col-9"><textarea id="details" name="details"></textarea><br><br></div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label for="status">Status:</label></div>
+                <div class="col-9"><input type="text" id="status" name="status"><br><br></div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label for="image">Image URL:</label></div>
+                <div class="col-9"><input type="url" id="image" name="image"><br><br></div>
+            </div>
+            <div><button class="btn btn-success mt-3">Submit</button></div>
+        </form>
+    </div>
+    </body>
+<%- include('../partials/footer.ejs')%>
+    
